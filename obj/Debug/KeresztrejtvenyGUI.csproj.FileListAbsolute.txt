@@ -1,0 +1,10 @@
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\bin\Debug\KeresztrejtvenyGUI.exe.config
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\bin\Debug\KeresztrejtvenyGUI.exe
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\bin\Debug\KeresztrejtvenyGUI.pdb
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\obj\Debug\KeresztrejtvenyGUI.csproj.AssemblyReference.cache
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\obj\Debug\KeresztrejtvenyGUI.Form1.resources
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\obj\Debug\KeresztrejtvenyGUI.Properties.Resources.resources
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\obj\Debug\KeresztrejtvenyGUI.csproj.GenerateResource.cache
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\obj\Debug\KeresztrejtvenyGUI.csproj.CoreCompileInputs.cache
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\obj\Debug\KeresztrejtvenyGUI.exe
+C:\Users\marce\Documents\GitHub\KeresztrejtvenyGUI\obj\Debug\KeresztrejtvenyGUI.pdb
