@@ -73,6 +73,7 @@
             // 
             // mentesButton
             // 
+            this.mentesButton.Enabled = false;
             this.mentesButton.Location = new System.Drawing.Point(160, 77);
             this.mentesButton.Name = "mentesButton";
             this.mentesButton.Size = new System.Drawing.Size(142, 23);

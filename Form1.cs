@@ -45,9 +45,21 @@ namespace KeresztrejtvenyGUI
 
         }
 
+        //10. b.
         private void letrehozasButton_Click(object sender, EventArgs e)
         {
-            //10. b.
+            mentesButton.Enabled = true;
+
+            for (int i = 0; i < sorok; i++)
+            {
+                for (int j = 0; j < oszlopok; j++)
+                {
+
+                    this.Controls.Remove(this.Controls[$"txt_{i}_{j}"]);
+
+                }
+            }
+            
             int x = 20;
             int y = 90;
 
@@ -81,12 +93,12 @@ namespace KeresztrejtvenyGUI
 
 
                     txt.DoubleClick += textboxChange_DoubleClick;
-                    txt.Click += textboxChange_Click;
                     Controls.Add(txt);
                 }
             }
 
 
+        //10. c.
         }
         private void textboxChange_DoubleClick(object sender, EventArgs e)
         {
@@ -95,27 +107,32 @@ namespace KeresztrejtvenyGUI
             else txt.Text = "-";
         }
 
-        private void textboxChange_Click(object sender, EventArgs e)
-        {
-            TextBox txt = (TextBox)sender;
-            
-        }
 
+        //10. d.
         private void mentesButton_Click(object sender, EventArgs e)
         {
-            StreamWriter sw = new StreamWriter($"kr{index.SelectedItem}.txt");
-            for (int i = 0; i < sorok; i++)
+            try
             {
-                for (int j = 0; j < oszlopok; j++)
+                StreamWriter sw = new StreamWriter($"kr{index.SelectedItem}.txt");
+                for (int i = 0; i < sorok; i++)
                 {
-                    TextBox txt = (TextBox)this.Controls.Find($"txt_{i}_{j}", true)[0];
-                    string text = txt.Text;
-                    File.AppendAllText($"kr{index.SelectedItem}.txt", text);
+                    for (int j = 0; j < oszlopok; j++)
+                    {
+                   
+                       sw.Write(this.Controls[$"txt_{i}_{j}"].Text);
+   
+                    }
+                    sw.WriteLine();
                 }
-                File.AppendAllText($"kr{index.SelectedItem}.txt", Environment.NewLine);
-            }
+                sw.Close();
 
-            MessageBox.Show("A keresztrejtvény mentése sikeres!");
+                MessageBox.Show("A keresztrejtvény mentése sikeres!");
+            }
+            catch (Exception hiba) 
+            {
+                MessageBox.Show(hiba.ToString()); 
+            }
+            
         }
     }
 }
